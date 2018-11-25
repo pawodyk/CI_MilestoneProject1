@@ -1,0 +1,43 @@
+
+
+
+#expander{
+    height: 2000px;
+}
+
+#splash{
+    text-align: center;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+#splash>video{
+    width: 80vw;
+    max-height: 100vh;
+    border-radius: 20%;
+
+}
+
+.navbar-stick-top{
+    position: sticky;
+    top: 10px;
+    z-index: 10;
+}
+
+.navbar-brand {
+  padding: 0; 
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+
+.section-header {
+    background-color: aqua;
+}
+
+.section-header>h2{
+    text-align: center;
+
+}
