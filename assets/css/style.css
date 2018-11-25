@@ -1,43 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Lobster|Sedgwick+Ave');
+
+
+/* COLORS */
+
+html {
+    background-color: #cd0f38;
+}
+
+.bg-section-header {
+    background-color: aqua;
+}
 
 
 
-#expander{
-    height: 2000px;
+/* GLOBAL RULES */
+
+html {
+    
+}
+
+h1 {
+    font-family: Lobster, sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5{
+    font-family: "Sedgwick Ave";
+}
+
+
+/* HEADER */
+
+header h1{
+    font-family: Lobster, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 4rem;
+
 }
 
 #splash{
+    width: 100vw;
+    padding: 5px 0 30px 0;
     text-align: center;
-    padding-bottom: 50px;
-    width: 100%;
 }
 
 #splash>video{
     width: 80vw;
     max-height: 100vh;
-    border-radius: 20%;
+    border-radius: 25%;
+    padding: 0px;
+    margin: 0px;
 
+}
+
+/* NAVBAR */
+
+.navbar{
+    background-color: rgb(205, 15, 56, 0.9);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.95);
+    -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.95);
+    box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.95);
+    min-height: 50px;
+}
+
+ul.navbar-nav li a{
+    font-family: Lobster, sans-serif;
+    color: #f3df00;
+    text-shadow: 1px 1px 2px #333;
+}
+
+ul.navbar-nav li a:hover {
+    background-color: transparent;
+    text-shadow: 1px 2px 10px #fdf8c4;
+    -webkit-transition: text-shadow 1s ease-out;
+    -moz-transition: text-shadow 1s ease-out;
+    -ms-transition: text-shadow 1s ease-out;
+    -o-transition: cotext-shadow 1s ease-out;
+    transition: text-shadow 1s ease-out;
+}
+
+ul.navbar-nav li a:focus {
+    background-color: transparent;
+    text-shadow: 0px 0px 10px #fff;
+}
+
+.navbar .container{
+    
 }
 
 .navbar-stick-top{
     position: sticky;
-    top: 10px;
+    top: 5px;
     z-index: 10;
 }
 
 .navbar-brand {
-  padding: 0; 
-}
-.navbar-brand>img {
-  height: 100%;
-  padding: 15px;
-  width: auto;
+    padding: 0; 
 }
 
-.section-header {
-    background-color: aqua;
+.navbar-brand>img {
+    height: 100%;
+    padding: 5px 40px;
+    width: auto;
+}
+
+/* SECTIONS */
+
+.section-nav{
+    background-color: black;
+    height: 60px;
+    visibility: hidden;
+}
+
+.section-header{
+
+    margin-bottom: 30px;
 }
 
 .section-header>h2{
     text-align: center;
+    padding: 0;
+}
 
+section {
+    font-family: 'Indie Flower';
+    font-size: 2rem;
+}
+
+
+/* MEDIA */
+
+@media (max-width: 767px){
+
+    .navbar-stick-top{
+        position: static;
+    }
+
+    #splash>video{
+        width: 100vw;
+        padding: 20px 5px;
+        min-width: 275px;
+    }
+
+    
+    .navbar-brand>img {
+        padding-left: 10px;
+    }
+
+    .section-nav{
+        height: 20px;
+    }
+
+}
+
+/* TEMP */
+
+section{
+    height: 1000px;
 }
