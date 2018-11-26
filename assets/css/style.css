@@ -15,8 +15,11 @@ html {
 
 /* GLOBAL RULES */
 
-html {
-    
+html{
+    padding: 0;
+    margin: 0;
+    font-family: 'Indie Flower', sans-serif;
+    font-size: 12px;
 }
 
 h1 {
@@ -34,35 +37,45 @@ h5{
 /* HEADER */
 
 header h1{
-    font-family: Lobster, Arial, Helvetica, sans-serif;
+    font-family: Lobster, sans-serif;
     text-align: center;
     font-size: 4rem;
 
 }
 
 #splash{
-    width: 100vw;
-    padding: 5px 0 30px 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: calc(90vh - 50px);
+    margin-top: 10vh;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    min-width: 300px;
+    
     text-align: center;
 }
 
 #splash>video{
-    width: 80vw;
-    max-height: 100vh;
-    border-radius: 25%;
-    padding: 0px;
-    margin: 0px;
-
+    height: 50vh;
+    width: calc(height * 16 / 9);
+    border: brown groove 10px;
+    border-radius: 20%;
+    padding: 0;
+    z-index: 1;
 }
 
 /* NAVBAR */
 
 .navbar{
+    padding: 0;
+    margin: 0;
     background-color: rgb(205, 15, 56, 0.9);
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.95);
-    -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.95);
-    box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.95);
+    -webkit-box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.95);
+    -moz-box-shadow:    0 0 10px 0 rgba(50, 50, 50, 0.95);
+    box-shadow:         0 0 10px 0 rgba(50, 50, 50, 0.95);
     min-height: 50px;
+    z-index: 10;
 }
 
 ul.navbar-nav li a{
@@ -83,17 +96,12 @@ ul.navbar-nav li a:hover {
 
 ul.navbar-nav li a:focus {
     background-color: transparent;
-    text-shadow: 0px 0px 10px #fff;
-}
-
-.navbar .container{
-    
+    text-shadow: 0 0 10px #fff;
 }
 
 .navbar-stick-top{
     position: sticky;
     top: 5px;
-    z-index: 10;
 }
 
 .navbar-brand {
@@ -139,8 +147,6 @@ section {
     }
 
     #splash>video{
-        width: 100vw;
-        padding: 20px 5px;
         min-width: 275px;
     }
 
