@@ -8,7 +8,7 @@ html {
 }
 
 .bg-section-header {
-    background-color: aqua;
+    background-color: #cd0f38;
 }
 
 
@@ -80,6 +80,7 @@ header h1{
 
 ul.navbar-nav li a{
     font-family: Lobster, sans-serif;
+    font-size: 1.5rem;
     color: #f3df00;
     text-shadow: 1px 1px 2px #333;
 }
@@ -134,7 +135,23 @@ ul.navbar-nav li a:focus {
 
 section {
     font-family: 'Indie Flower';
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+
+.content-box{
+    padding: 30px;
+
+}
+
+.text-box{
+    background-color: azure;
+    border: aquamarine groove 10px;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+.image-box{
+    margin-top: 20px;
 }
 
 
