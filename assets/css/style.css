@@ -11,6 +11,17 @@ html {
     background-color: #cd0f38;
 }
 
+.co-yel{
+    background-color: #f3df00;
+    border-color: #f3df00;
+}
+
+.co-red{
+    background-color: #cd0f38;
+    border-color: #cd0f38;
+}
+
+
 
 
 /* GLOBAL RULES */
@@ -39,7 +50,7 @@ h5{
 header h1{
     font-family: Lobster, sans-serif;
     text-align: center;
-    font-size: 4rem;
+    font-size: 5rem;
 
 }
 
@@ -49,7 +60,7 @@ header h1{
     width: 100%;
     height: calc(90vh - 50px);
     margin-top: 10vh;
-    padding-top: 10vh;
+    padding-top: 2vh;
     padding-bottom: 20vh;
     min-width: 300px;
     
@@ -63,6 +74,7 @@ header h1{
     border-radius: 20%;
     padding: 0;
     z-index: 1;
+    object-fit: fill;
 }
 
 /* NAVBAR */
@@ -118,19 +130,23 @@ ul.navbar-nav li a:focus {
 /* SECTIONS */
 
 .section-nav{
-    background-color: black;
+    background-color: transparent;
     height: 60px;
     visibility: hidden;
 }
 
 .section-header{
-
     margin-bottom: 30px;
+    background-color: #3a88a4;
 }
 
 .section-header>h2{
+    font-family: Lobster, sans-serif;
+    color: #f3df00;
+    font-size: 4rem;
     text-align: center;
     padding: 0;
+    
 }
 
 section {
@@ -148,10 +164,28 @@ section {
     border: aquamarine groove 10px;
     border-radius: 20px;
     padding: 10px 15px;
+    margin-top: 10px;
 }
 
 .image-box{
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+/* ALBUMS SECTION */
+
+.album-box{
+    padding: 10px;
+    background-color: bisque;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.album-cover{
+    
+}
+
+.album-text{
+    padding: 20px;
 }
 
 
@@ -176,10 +210,9 @@ section {
         height: 20px;
     }
 
-}
+    .text-box{
+        /*TODO*/
+        /*url background hide the image*/
+    }
 
-/* TEMP */
-
-section{
-    height: 1000px;
 }
