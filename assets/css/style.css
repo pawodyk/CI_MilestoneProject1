@@ -4,25 +4,47 @@
 /* COLORS */
 
 html {
-    background-color: #cd0f38;
+    background-color: #b92525;
 }
 
-.bg-section-header {
-    background-color: #cd0f38;
+main{
+    background-color: #b92525
 }
 
-.co-yel{
+.section-header {
     background-color: #f3df00;
-    border-color: #f3df00;
 }
 
-.co-red{
+.bg-main{
     background-color: #cd0f38;
     border-color: #cd0f38;
 }
 
+.bg-sec{
+    background-color: #f3df00;
+    border-color: #f3df00;
+}
 
+.bg-red{
+    background-color: #772020;
+    border-color: #772020;
+}
 
+ .bg-blu{
+     background-color: #3a88a4;
+     border-color: #3a88a4;
+ }
+
+.bg-gre{
+    background-color: #6c8753;
+    border-color:#6c8753
+}
+
+.bg-yel{
+    background-color: #c8ac52;
+    border-color: #c8a652;
+    
+}
 
 /* GLOBAL RULES */
 
@@ -82,7 +104,7 @@ header h1{
 .navbar{
     padding: 0;
     margin: 0;
-    background-color: rgb(205, 15, 56, 0.9);
+    background-color: rgba(185, 37, 37, 0.9);
     -webkit-box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.95);
     -moz-box-shadow:    0 0 10px 0 rgba(50, 50, 50, 0.95);
     box-shadow:         0 0 10px 0 rgba(50, 50, 50, 0.95);
@@ -137,12 +159,12 @@ ul.navbar-nav li a:focus {
 
 .section-header{
     margin-bottom: 30px;
-    background-color: #3a88a4;
 }
 
 .section-header>h2{
     font-family: Lobster, sans-serif;
-    color: #f3df00;
+    color: #b91820;
+    text-shadow: 1px 1px 2px #333;
     font-size: 4rem;
     text-align: center;
     padding: 0;
@@ -156,7 +178,8 @@ section {
 
 .content-box{
     padding: 30px;
-
+    background-color: #3a88a4;
+    border-radius: 10px;
 }
 
 .text-box{
@@ -169,23 +192,44 @@ section {
 
 .image-box{
     margin-top: 30px;
+    width: 100%;
 }
 
 /* ALBUMS SECTION */
 
 .album-box{
     padding: 10px;
-    background-color: bisque;
     margin-bottom: 2rem;
     border-radius: 10px;
 }
+.album-box>h3{
+    font-size: 3rem;
+    background-color: rgb(58, 136, 164, .2);
+    padding: 1rem 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+}
 
 .album-cover{
+    height: 100%;
+}
+
+.album-cover>img{
+    /*vertical-align: middle;*/
+    width: 100%;
+    margin: auto 0;
     
 }
 
-.album-text{
+.album-info{
     padding: 20px;
+    margin: 0;
+}
+
+.album-info audio{
+    display: block;
+    width: 100%;
 }
 
 
@@ -210,9 +254,26 @@ section {
         height: 20px;
     }
 
+    .content-box{
+        border-radius: 0;
+    }
+
     .text-box{
         /*TODO*/
         /*url background hide the image*/
     }
 
+    
+
+}
+
+/* FIREFOX SPECIFIC */
+
+/*This section is used to slightly modify firefox square audio player*/
+@-moz-document url-prefix() { 
+    .album-info audio{
+        border-radius: 20px;
+        height: 40px;
+        background-color: aquamarine;
+    }
 }
