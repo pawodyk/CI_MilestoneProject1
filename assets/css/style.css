@@ -43,7 +43,6 @@ main{
 .bg-yel{
     background-color: #c8ac52;
     border-color: #c8a652;
-    
 }
 
 /* GLOBAL RULES */
@@ -191,8 +190,20 @@ section {
 }
 
 .image-box{
-    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.picture{
+    
     width: 100%;
+}
+
+.secondary-header{
+    font-family: Lobster, sans-serif;
+    color: #3a88a4;
+    padding: 1.5rem 0 ;
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px #444;
 }
 
 /* ALBUMS SECTION */
@@ -261,6 +272,7 @@ section {
     .text-box{
         /*TODO*/
         /*url background hide the image*/
+        z-index: 1;
     }
 
     
