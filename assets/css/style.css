@@ -225,6 +225,13 @@ section {
     width: 100%;
 }
 
+/* FOOTER */
+
+footer{
+    height: 200px;
+    
+}
+
 /* COLORS OVERRIDE*/
 
 html {
@@ -232,7 +239,11 @@ html {
 }
 
 main{
-    background-color: #b92525
+    background: linear-gradient(#b92525, #cd0f38)
+}
+
+footer{
+    background: linear-gradient(#cd0f38, #861a1a);
 }
 
 .section-header {
