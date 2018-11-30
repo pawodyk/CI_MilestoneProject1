@@ -47,7 +47,7 @@ header h1{
 
 #splash>video{
     height: 50vh;
-    width: calc(height * 16 / 9);
+    max-width: 100%;
     border: brown groove 10px;
     border-radius: 20%;
     padding: 0;
