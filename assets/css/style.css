@@ -20,6 +20,8 @@ h3,
 h4,
 h5{
     font-family: "Sedgwick Ave";
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -114,7 +116,7 @@ ul.navbar-nav li a:focus {
 }
 
 .section-header{
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .section-header>h2{
@@ -124,6 +126,7 @@ ul.navbar-nav li a:focus {
     font-size: 4rem;
     text-align: center;
     padding: 0;
+    margin: 5px auto;
     
 }
 
@@ -143,11 +146,12 @@ section {
     border: aquamarine groove 10px;
     border-radius: 20px;
     padding: 10px 15px;
-    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 .image-box{
-    padding-top: 30px;
+    margin-bottom: 15px;
+    /* padding-top: 30px; */
     /* display: flex;
     flex-direction: column;
     justify-content: center;
@@ -156,13 +160,17 @@ section {
 }
 
 .picture{
+    object-fit: cover;
+    background-repeat: no-repeat;
     width: 100%;
 }
 
 .secondary-header{
     font-family: Lobster, sans-serif;
     color: #1f7b9c;
-    padding: 1.5rem 0 ;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 10px 0;
     font-size: 3rem;
     text-shadow: 1px 1px 3px #222;
 }
@@ -280,6 +288,10 @@ footer{
     border-color: #c8a652;
 }
 
+.bg-spotify{
+    background-color: #7bad4c;
+}
+
 /* MEDIA */
 
 @media (max-width: 767px){
@@ -297,9 +309,9 @@ footer{
         padding-left: 10px;
     }
 
-    .section-nav{
+    /* .section-nav{
         height: 20px;
-    }
+    } */
 
     .content-box{
         border-radius: 0;
@@ -309,6 +321,11 @@ footer{
         /*TODO*/
         /*url background hide the image*/
         z-index: 1;
+    }
+
+    .image-box{
+        padding: 0;
+        margin-bottom: 5px;
     }
 
 }
