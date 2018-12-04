@@ -236,8 +236,71 @@ section {
 /* FOOTER */
 
 footer{
-    height: 200px;
-    
+    min-height: 200px;
+}
+
+.footer-legal{
+    margin: 0;
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+.footer-legal>span{
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.footer-social{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.social-links{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.social-links>span{
+    font-family: Lobster, sans-serif;
+    font-size: 3rem;
+    color: black;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.social-links li i{
+    width: 64px;
+    height: 64px;
+    padding: 16px 0;
+    margin: 5px 0;
+    border-radius: 50%;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #b91820;
+    background: rgb(0, 0, 0);
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links i.fb:hover{
+    color: #5771a8;
+}
+
+.social-links i.tw:hover{
+    color: #17a3f2;
+}
+
+.social-links i.yt:hover{
+    color: #ff0000;
+}
+
+.social-links i.sp:hover{
+    color: #1ed760;
 }
 
 /* COLORS OVERRIDE*/
