@@ -24,6 +24,9 @@ h5{
     padding: 0;
 }
 
+.no-padding{
+    padding: 0;
+}
 
 /* HEADER */
 
@@ -72,14 +75,14 @@ header h1{
 .navbar .navbar-header button {
     background-color: #b91820;
     border: solid #f3df00 1px;
-    -webkit-transition: all 1s ease-out;
-    -moz-transition: all 1s ease-out;
-    -ms-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
 }
 
-.navbar .navbar-header button:hover {
+.navbar .navbar-header button:hover:focus {
     background-color: #641010;
     -webkit-box-shadow: 0 0 10px 0 #fdf8c4f2;
     -moz-box-shadow:    0 0 10px 0 #fdf8c4f2;
@@ -314,7 +317,7 @@ footer{
     font-size: 1.3rem;
     display: inline-block;
     vertical-align: middle;
-    line-height: normal;
+    line-height: 2rem;
 }
 
 .footer-social{
@@ -424,6 +427,10 @@ footer{
 
 @media (max-width: 767px){
 
+    .no-padding-xs {
+        padding: 0;
+    }
+
     .navbar-stick-top{
         /* position: static; */
         top: 0;
@@ -438,18 +445,8 @@ footer{
         padding-left: 10px;
     }
 
-    /* .section-nav{
-        height: 20px;
-    } */
-
     .content-box{
         border-radius: 0;
-    }
-
-    .text-box{
-        /*TODO*/
-        /*url background hide the image*/
-        z-index: 1;
     }
 
     .image-box{
