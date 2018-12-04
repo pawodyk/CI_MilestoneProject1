@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="assets\css\bootstrap.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets\css\style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
 </head>
 
 <body>
@@ -49,7 +50,7 @@
                         <li><a href="#history">History</a></li>
                         <li><a href="#band">Band</a></li>
                         <li><a href="#albums">Albums</a></li>
-                        <li><a href="#future">Future</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 <!-- </div> -->
             </div>
@@ -62,18 +63,22 @@
             </div>
             <div class="container content-box">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 image-box">
-                        <img class="img-responsive img-rounded picture" src="assets/img/monkees.jpg" alt="">
+                    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+                        <div class="image-box">
+                            <img class="img-responsive img-rounded picture" src="assets/img/monkees.jpg" alt="">
+                        </div>
                     </div>
                         <div class="col-xs-12 col-lg-offset-1 col-lg-10 text-box bg-blu">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime dignissimos libero, reprehenderit consectetur ad magni delectus deleniti facere itaque repudiandae quae hic provident modi corporis labore non error molestiae enim odio earum nisi odit. Voluptas repellat itaque aliquam illo perferendis quod eos labore, aut, alias cumque esse numquam reprehenderit consequuntur dolore laboriosam minima at natus voluptatem fuga nihil, optio tenetur quibusdam dolor id. In, doloribus consequuntur esse atque eos beatae, a necessitatibus tenetur similique debitis molestiae sed doloremque quo natus ratione omnis, quas ab asperiores quam quidem distinctio neque alias impedit amet? Pariatur explicabo quibusdam velit alias quaerat ducimus architecto.</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 hidden-sm col-md-6 col-lg-push-5 col-lg-offset-1 col-lg-5 image-box">
-                            <img class="img-responsive img-rounded picture" src="assets/img/cover3.jpg" alt="">
-                    </div>
-                            <div class="col-xs-12 col-md-6 col-lg-pull-5 col-lg-5 text-box bg-gre">
+                        <div class="col-xs-12 hidden-sm col-md-6 col-lg-push-5 col-lg-offset-1 col-lg-5">
+                            <div class="image-box">
+                                <img class="img-responsive img-rounded picture" src="assets/img/cover3.jpg" alt="">
+                            </div>  
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-pull-5 col-lg-5 text-box bg-gre">
                                 <img src="assets/img/cover3.jpg" alt="" class="visible-sm-inline pull-right img-responsive img-rounded" style="margin-left: 10px; margin-bottom: 5px; border: 5px solid limegreen;">
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime dignissimos libero, reprehenderit consectetur ad magni delectus deleniti facere itaque repudiandae quae hic provident modi corporis labore non error molestiae enim odio earum nisi odit. Voluptas repellat itaque aliquam illo perferendis quod eos labore, aut, alias cumque esse numquam reprehenderit consequuntur dolore laboriosam minima at natus voluptatem fuga nihil, optio tenetur quibusdam dolor id. In, doloribus consequuntur esse atque eos beatae, a necessitatibus tenetur similique debitis molestiae sed doloremque quo natus ratione omnis, quas ab asperiores quam quidem distinctio neque alias impedit amet? Pariatur explicabo quibusdam velit alias quaerat ducimus architecto.</p>
                             </div>
@@ -89,7 +94,9 @@
             <div class="container bg-warning content-box">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-lg-6 image-box">
-                        <img class="img-responsive img-rounded picture" src="assets/img/band.jpg" alt="">
+                        <div class="image-box">
+                            <img class="img-responsive img-rounded picture" src="assets/img/band.jpg" alt="">
+                        </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-lg-6">
                         <div class="row">
@@ -182,7 +189,7 @@
                         </div>
                     </div>
                     
-                    <div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2 album-box bg-primary">
+                    <div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2 album-box bg-spotify">
                         <h3>Listen us on spotify</h3>
                         <div class="text-center">
                             <iframe src="https://open.spotify.com/embed/album/05jMK1VY8Ua6yRIFXalP3F" width="80%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -192,18 +199,53 @@
             </div>
         </section>
 
+        <div id="contact" class="section-nav"></div>
+        <section>
+            <div class="container-fluid section-header">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="container content-box">
+                <div class="row">
+                    <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-3 contact-form">
+                        <div class="contact-box bg-sec text-center">
+                            <h3 class="secondary-header">We are still rocking!</h3>
+                            <p>We are availabilite to perform at events such as weddings and Christmas parties. if you wish to book out performance please contact us bellow</p>
+                        </div>
+                        <form>
+                            <input type="text" name="name" id="fullname" class=" form-control" placeholder="Name" required>
+                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone Number" required>
+                            <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email Address">
+                            <textarea rows="5" name="message" id="message" class="form-control" placeholder="Message" required></textarea>
+                            <button type="submit" class="btn btn-block btn-success center-block">Send!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="bg-main">
+    <footer>
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-8"></div>
-                <div class="col-xs-12 col-sm-6 col-md-4"></div>
+                <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-4 col-md-push-8 footer-social">
+                    <div class="social-links">
+                        <span>Follow us:</span>
+                        <ul class="list-inline pull-right">
+                            <li><a target="_blank" href="https://www.facebook.com/TheMonkees"><i class="fa fa-facebook fb"></i></a></li>
+                            <li><a target="_blank" href="https://twitter.com/TheMonkees"><i class="fa fa-twitter tw"></i></a></li>
+                            <li><a target="_blank" href="https://www.youtube.com/user/themonkees"><i class="fa fa-youtube yt"></i></a></li>
+                            <li><a target="_blank" href="https://open.spotify.com/artist/320EPCSEezHt1rtbfwH6Ck"><i class="fa fa-spotify sp" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-md-8 col-md-pull-4 footer-legal">
+                    <span><i class="fa fa-copyright" aria-hidden="true"></i> this is project website made by Pawel Wodyk - all content rights reserved by <i>The Monkees</i> </span>
+                </div>
             </div>
         </div>
             
     </footer>
-<script src="https: //maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>

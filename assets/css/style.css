@@ -19,7 +19,9 @@ h2,
 h3,
 h4,
 h5{
-    font-family: "Sedgwick Ave";
+    font-family: "Sedgwick Ave", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -114,7 +116,7 @@ ul.navbar-nav li a:focus {
 }
 
 .section-header{
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .section-header>h2{
@@ -124,6 +126,7 @@ ul.navbar-nav li a:focus {
     font-size: 4rem;
     text-align: center;
     padding: 0;
+    margin: 5px auto;
     
 }
 
@@ -143,11 +146,12 @@ section {
     border: aquamarine groove 10px;
     border-radius: 20px;
     padding: 10px 15px;
-    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 .image-box{
-    padding-top: 30px;
+    margin-bottom: 15px;
+    /* padding-top: 30px; */
     /* display: flex;
     flex-direction: column;
     justify-content: center;
@@ -156,13 +160,17 @@ section {
 }
 
 .picture{
+    object-fit: cover;
+    background-repeat: no-repeat;
     width: 100%;
 }
 
 .secondary-header{
     font-family: Lobster, sans-serif;
     color: #1f7b9c;
-    padding: 1.5rem 0 ;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 10px 0;
     font-size: 3rem;
     text-shadow: 1px 1px 3px #222;
 }
@@ -225,11 +233,103 @@ section {
     width: 100%;
 }
 
+/* FORM */
+
+.contact-form
+
+form>*{
+    margin-bottom: 5px;
+}
+
+.contact-box{
+    padding: 10px;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.contact-box>h3{
+    font-size: 3rem;
+    color: #222;
+    background-color: rgba(135, 135, 135, 0.3);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.contact-box p {
+    font-size: 1.6rem;
+    font-family: "Sedgwick Ave", sans-serif;
+}
+
 /* FOOTER */
 
 footer{
-    height: 200px;
-    
+    min-height: 200px;
+}
+
+.footer-legal{
+    margin: 0;
+    padding-top: 3rem;
+    line-height: 20px;
+}
+
+.footer-legal>span{
+    font-family: 'Sedgwick Ave', 'Indie Flower', serif;
+    color: #0f0f0f;
+    font-size: 1.3rem;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.footer-social{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.social-links{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.social-links>span{
+    font-family: Lobster, sans-serif;
+    font-size: 3rem;
+    color: black;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.social-links li i{
+    width: 64px;
+    height: 64px;
+    padding: 16px 0;
+    margin: 5px 0;
+    border-radius: 50%;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #b91820;
+    background: rgb(0, 0, 0);
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links i.fb:hover{
+    color: #5771a8;
+}
+
+.social-links i.tw:hover{
+    color: #17a3f2;
+}
+
+.social-links i.yt:hover{
+    color: #ff0000;
+}
+
+.social-links i.sp:hover{
+    color: #1ed760;
 }
 
 /* COLORS OVERRIDE*/
@@ -280,6 +380,10 @@ footer{
     border-color: #c8a652;
 }
 
+.bg-spotify{
+    background-color: #7bad4c;
+}
+
 /* MEDIA */
 
 @media (max-width: 767px){
@@ -297,9 +401,9 @@ footer{
         padding-left: 10px;
     }
 
-    .section-nav{
+    /* .section-nav{
         height: 20px;
-    }
+    } */
 
     .content-box{
         border-radius: 0;
@@ -309,6 +413,11 @@ footer{
         /*TODO*/
         /*url background hide the image*/
         z-index: 1;
+    }
+
+    .image-box{
+        padding: 0;
+        margin-bottom: 5px;
     }
 
 }
