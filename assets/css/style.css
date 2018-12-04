@@ -24,6 +24,9 @@ h5{
     padding: 0;
 }
 
+.no-padding{
+    padding: 0;
+}
 
 /* HEADER */
 
@@ -69,6 +72,30 @@ header h1{
     min-height: 50px;
     z-index: 10;
 }
+.navbar .navbar-header button {
+    background-color: #b91820;
+    border: solid #f3df00 1px;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+}
+
+.navbar .navbar-header button:hover:focus {
+    background-color: #641010;
+    -webkit-box-shadow: 0 0 10px 0 #fdf8c4f2;
+    -moz-box-shadow:    0 0 10px 0 #fdf8c4f2;
+    box-shadow:         0 0 10px 0 #fdf8c4f2;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #f3df00;
+}
+
+.navbar-toggle .icon-bar:hover {
+    background-color: #fdf8c4;
+}
 
 ul.navbar-nav li a{
     font-family: Lobster, sans-serif;
@@ -83,7 +110,7 @@ ul.navbar-nav li a:hover {
     -webkit-transition: text-shadow 1s ease-out;
     -moz-transition: text-shadow 1s ease-out;
     -ms-transition: text-shadow 1s ease-out;
-    -o-transition: cotext-shadow 1s ease-out;
+    -o-transition: text-shadow 1s ease-out;
     transition: text-shadow 1s ease-out;
 }
 
@@ -159,6 +186,11 @@ section {
     height: 100%; */
 }
 
+.img-inside{
+    margin-left: 10px; 
+    margin-bottom: 5px; 
+}
+
 .picture{
     object-fit: cover;
     background-repeat: no-repeat;
@@ -220,7 +252,7 @@ section {
     /*vertical-align: middle;*/
     width: 100%;
     margin: auto 0;
-    
+    border: #0f0f0f solid 1px;
 }
 
 .album-info{
@@ -248,16 +280,23 @@ form>*{
 }
 
 .contact-box>h3{
+    font-family: Lobster, sans-serif;
     font-size: 3rem;
     color: #222;
     background-color: rgba(135, 135, 135, 0.3);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    padding: 10px 0;
 }
 
 .contact-box p {
     font-size: 1.6rem;
     font-family: "Sedgwick Ave", sans-serif;
+    background-color: rgba(135, 135, 135, 0.3);
+    padding: 5px 10px 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
 }
 
 /* FOOTER */
@@ -278,7 +317,7 @@ footer{
     font-size: 1.3rem;
     display: inline-block;
     vertical-align: middle;
-    line-height: normal;
+    line-height: 2rem;
 }
 
 .footer-social{
@@ -388,8 +427,13 @@ footer{
 
 @media (max-width: 767px){
 
+    .no-padding-xs {
+        padding: 0;
+    }
+
     .navbar-stick-top{
-        position: static;
+        /* position: static; */
+        top: 0;
     }
 
     #splash>video{
@@ -401,23 +445,21 @@ footer{
         padding-left: 10px;
     }
 
-    /* .section-nav{
-        height: 20px;
-    } */
-
     .content-box{
         border-radius: 0;
-    }
-
-    .text-box{
-        /*TODO*/
-        /*url background hide the image*/
-        z-index: 1;
     }
 
     .image-box{
         padding: 0;
         margin-bottom: 5px;
+    }
+
+    .footer-legal{
+        text-align: center;
+    }
+
+    .footer-social{
+        text-align: center;
     }
 
 }
