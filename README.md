@@ -108,7 +108,7 @@ All the features on the website has been tested manually.
 The Website was deployed on GitHub Pages from the Master Branch.
 
 The link to the deployed website:
-    https://github.com/pwodyk/CI_MilestoneProject1
+    https://pwodyk.github.io/CI_MilestoneProject1/
 
 ## Credits
 
