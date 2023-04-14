@@ -6,7 +6,7 @@
  The site closely followed the requiremets provided by the "band". The site allowes the person visiting the website to get the fealling of the band. The site was designed in the theme of the 60s rock band, with bright colours and use of groovy border type around text fields and funky font type.
  The user could read abount the band listen to their music and navigate throuaught the webpage with ease thanks to the sticky menu bar that is available in any section of the website.
  
-[Deployed website on the GitHub Pages](https://pwodyk.github.io/CI_MilestoneProject1/)
+[Deployed website on the GitHub Pages](https://pawodyk.github.io/CI_MilestoneProject1/)
 
 ## Rquirements for the project
 
